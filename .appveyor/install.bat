@@ -59,7 +59,7 @@ GOTO:EOF
     echo %BUILD_VERSION% | findstr /C:"disable_autoupdate">nul && (
         set TDESKTOP_BUILD_DEFINES=%TDESKTOP_BUILD_DEFINES%,TDESKTOP_DISABLE_AUTOUPDATE
     )
-
+ 
     echo %BUILD_VERSION% | findstr /C:"disable_register_custom_scheme">nul && (
         set TDESKTOP_BUILD_DEFINES=%TDESKTOP_BUILD_DEFINES%,TDESKTOP_DISABLE_REGISTER_CUSTOM_SCHEME
     )
